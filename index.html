@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<title>STK Production</title>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-cyan.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<style>
+  .mySlides {
+    display: none
+  }
+
+  .w3-left,
+  .w3-right,
+  .w3-badge {
+    cursor: pointer
+  }
+
+  .w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0
+  }
+</style>
+</title>
+
+<body>
+
+
+  <!-- Header -->
+  <header class="w3-container w3-theme-d5 w3-padding" id="myHeader">
+    <div class="w3-center">
+      <h4>You dream, we create</h4>
+      <h1 class="w3-xxxlarge w3-animate-bottom">STK services</h1>
+      <div class="w3-padding-32">
+        <span><a href="#contact-form"><button class="w3-btn w3-cyan w3-xmedium w3-hover-light-grey w3-text-white"
+              onclick="document.getElementById('contact-form').style.display='block'" style="font-weight:500;">Book session</button></a></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Modal -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <footer class="w3-container w3-theme-cyan">
+        <p>STK Production</p>
+      </footer>
+    </div>
+  </div>
+  <br>
+  <div  class="w3-content">
+    <div class="w3-center w3-padding">
+      <p>Accumulation of 20 years of experience in an international context in film production, photo and video events.</p>
+    </div>
+
+    <div class="w3-container w3-margin">
+      <h2 class="w3-center w3-text-cyan" style="font-weight: bold;">Our services</h2>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-margin-top w3-border">
+      <div class="w3-col w3-half">
+        <div class="w3-card w3-container" style="min-height:460px">
+          <h3>Photography and Editing Services</h3><br>
+          <i class="fa fa-camera w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+          <p>Manipulation of photos and images</p>
+          <p>Aadherence to style guide and branding</p>
+          <p>Handling all your photography paperwork</p>
+        </div>
+      </div>
+
+      <div class="w3-col w3-half">
+        <div class="w3-card w3-container" style="min-height:460px">
+          <h3>Production and Filming Services</h3><br>
+          <i class="fa fa-film w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+          <p>Commercials</p>
+          <p>Documentaries</p>
+          <p>Video clips</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-container w3-margin">
+      <h2 id="contact-form" class="w3-center w3-text-cyan" style="font-weight: bold;">Contact Us</h2>
+    </div>
+
+    <div class="w3-row-padding">
+
+      <div class="w3-container">
+        <form class="w3-container w3-card-4">
+          <h2>Form</h2>
+          <div class="w3-section">
+            <input id="name" class="w3-input" type="text" required>
+            <label>Name</label>
+          </div>
+          <div class="w3-section">
+            <input id="email" class="w3-input" type="text" required>
+            <label>Email</label>
+          </div>
+          <div class="w3-section">
+            <input id="subject" class="w3-input" type="text" required>
+            <label>Subject</label>
+          </div>
+          <div class="w3-section">
+            <input id="message" class="w3-input" type="text" required>
+            <label>Message</label>
+          </div>
+
+          <div class="w3-row">
+            <div class="w3-half">
+              <input id="photography" class="w3-check" type="checkbox" checked="checked">
+              <label>Photography and Editing Services</label>
+              <br>
+              <input id="production" class="w3-check" type="checkbox">
+              <label>Production and Filming Services
+              </label>
+
+              <br><br>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  <div class="w3-container w3-center w3-padding">
+
+    <div class="w3-light-gray">
+      <div id="myBar" class="w3-padding-3 w3-theme-dark" style="width:20%">20%</div>
+    </div><br>
+    <button class="w3-btn w3-theme-dark" onclick="handleSubmit()">Submit</button>
+  </div>
+
+
+
+  <div id="slideshow" class="w3-margin">
+    <h2 class="w3-center w3-text-cyan w3-padding" style="font-weight: bold;">Our Creations</h2>
+  </div>
+
+  <div class="w3-content w3-display-container w3-padding" style="max-width:800px">
+    <img class="mySlides" src="images/cheese.jpg" style="width:100%">
+    <img class="mySlides" src="images/film.jpg" style="width:100%">
+    <img class="mySlides" src="images/silk.jpg" style="width:100%">
+    <img class="mySlides" src="images/theater.jpg" style="width:100%">
+    <img class="mySlides" src="images/harissa.jpg" style="width:100%">
+
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+
+    </div>
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-theme-dark w3-padding-16">
+    <h3>©STK Production</h3>
+    <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+      <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+      <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+          <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+    <div class="w3-center w3-opacity w3-xlarge">
+      <a target="_blank" href="https://www.facebook.com/STK.Studio.Production"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a target="_blank" href="https://www.instagram.com/studio.tunisia/?hl"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="mailto:studio.stk.production@gmail.com"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>
+    </div>
+
+  </footer>
+
+  <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+  <script>
+
+
+
+    // Slideshows
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-white";
+    }
+    //form
+    function sendInputToAPI() {
+      let name = document.getElementById("name").value
+      let email = document.getElementById("email").value
+      let subject = document.getElementById("subject").value
+      let message = document.getElementById("message").value
+
+      let url =
+        `https://script.google.com/macros/s/AKfycbxfB5JAe1syrMUIIaRUb4vGuktGd8cwom4jlYV8_n3D_n2DkVo8ZjpcXrm7UBnaN9l4/exec?name=${name}&email=${email}&subject=${subject}&message=${message}`
+
+      let httpR = new XMLHttpRequest()
+      httpR.onreadystatechange = function(){
+            if(httpR.readyState == 4 && httpR.status == 200){
+                console.log("success")
+            }
+        }
+      httpR.open("POST", url)
+      httpR.send()
+    }
+
+    function handleSubmit() {
+      move()
+      sendInputToAPI()
+    }
+
+   /* function sendStuffToAPI() {
+        let url = "https://script.google.com/macros/s/AKfycbxfB5JAe1syrMUIIaRUb4vGuktGd8cwom4jlYV8_n3D_n2DkVo8ZjpcXrm7UBnaN9l4/exec" + "?name=Belkiss&email=belkiss@hehe.hehe&subject=habibiness"
+
+        let httpR = new XMLHttpRequest()
+        httpR.onreadystatechange = function(){
+            if(httpR.readyState == 4 && httpR.status == 200){
+                console.log("success")
+            }
+        }    
+        httpR.open("POST", url)
+        httpR.send()
+    }*/
+
+    // Progress Bar
+    
+
+
+
+    function move() {
+      var elem = document.getElementById("myBar");
+      var width = 5;
+      var id = setInterval(frame, 10);
+
+      function frame() {
+        if (width == 100) {
+          clearInterval(id);
+        } else {
+          width++;
+          elem.style.width = width + '%';
+          elem.innerHTML = width * 1 + '%';
+        }
+      }
+    }
+  </script>
+
+</body>
+
+<!--questions:
+how can I link the form to an email account or sth similar so that the submissions go there
+slideshow: I don't want it to be jumping when I change from an image to another
+-->
+
+</html>

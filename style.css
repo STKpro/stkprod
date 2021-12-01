@@ -1,0 +1,146 @@
+
+
+.banner {
+	background-color: #EEDB03;
+	font-size: 24px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    
+}
+
+/*modificaiton du font en utilisant font-face ci-dessous*/
+h1{
+    text-align: center;
+    margin-bottom: 80px;
+    color: #21345E ;
+    font-family: chivo;
+}
+
+
+p {
+    font-size: medium;
+}
+
+h2{
+    text-align: center;
+}
+/*display grid et grid-template-columns pour pouvoir aligner les cards parallèlement*/
+.image-container{
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+.card {
+	text-align: center !important;
+    border: solid !important;
+    border-color: #C9E0E7 !important;
+    width: auto;
+    background-color: #C9E0E7;
+    text-align: center;
+    padding: 24px;
+    transition: width 3s;
+
+}
+img {
+    width: auto;
+    height: auto;
+}
+
+/*transformations*/
+img:hover{
+    transform: scaleX(-1);
+}
+
+.card:hover{
+    width: 220px;
+    box-shadow: 5px 5px 5px 5px lightslategray;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #005a9b !important;
+}
+
+.skill-row{
+    width: 500px;
+    margin: 50px auto 50px auto;
+    text-align: left;
+  }
+  
+  .skills {
+    padding: 100px;
+  }
+  .lute-pic{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+    }
+  
+  .translation-pic{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+  }
+  
+  .contact-me {
+    padding: 100px;
+  }
+  
+  .message {
+    width: 50%;
+    margin: auto;
+  }
+  
+  .button {
+    margin-top: 100px;
+    margin-bottom: 0;
+     -webkit-border-radius: 13px;
+     -moz-border-radius: 13px;
+     border-radius: 13px;
+     height: 0;
+     line-height: 0;
+     color: #FFFFFF;
+     font-family: Georgia;
+     width: 98px;
+     font-size: 15px;
+     font-weight: 400;
+     padding: 22px;
+     background-color: #11999E;
+     text-decoration: none;
+     display: inline-block;
+     cursor: pointer;
+     text-align: center;
+    }
+  
+  .button:hover {
+     border: solid #FFFFFF 1px;
+     background: #9DAAB9;
+     background-image: -webkit-linear-gradient(top, #9DAAB9, rgba(255, 255, 255, 0.49));
+     background-image: -moz-linear-gradient(top, #9DAAB9, rgba(255, 255, 255, 0.49));
+     background-image: -ms-linear-gradient(top, #9DAAB9, rgba(255, 255, 255, 0.49));
+     background-image: -o-linear-gradient(top, #9DAAB9, rgba(255, 255, 255, 0.49));
+     background-image: -webkit-gradient(to bottom, #9DAAB9, rgba(255, 255, 255, 0.49));
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     border-radius: 20px;
+     text-decoration: none;
+    }
+  
+  .bottom-container {
+    text-align: center;
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  .copy-rights {
+    color: white;
+    font-size: 10px;
+    padding: 30px;
+  }
+  
